@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import JobsCard from './JobsCard';
 
 const Jobs = ({data}) => {
+    const [jobInfo,setJobInfo] = useState(data.slice(0,6))
+
+    
+    const handelAllData = ()=>{
+        setJobInfo(data)
+    }
+
+   
     return (
         <Container className='mt-5'>
             <h3 className='text-center'>Featured Jobs</h3>
@@ -10,11 +18,11 @@ const Jobs = ({data}) => {
             <div className='row row-cols-1 row-cols-md-2'>
             
             {
-                 data.map(job => <div className='col' key={job.id}><JobsCard job={job}/></div>)
+                 jobInfo.map(job => <div className='col' key={job.id}><JobsCard job={job}/></div>)
             }
             </div>
             <div className='text-center'>
-                <button className='mt-3 customButton px-4 py-1'>See Alls</button>
+                <button onClick={()=>handelAllData()} className='mt-3 customButton px-4 py-1'>See Alls</button>
             </div>
         </Container>
     );
