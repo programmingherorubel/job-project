@@ -7,6 +7,7 @@ import './index.css';
 import Blog from './pages/Blog';
 import Home from './components/Home';
 import SingleJobDetail from './components/SingleJobDetail';
+import ApplyJob from './pages/ApplyJob';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
     {
         path:'/blog',
         element:<Blog></Blog>
+    },
+    {
+        path:'/applyjob',
+        element:<ApplyJob></ApplyJob>
     }
 ])
 
