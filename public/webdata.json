@@ -1,6 +1,6 @@
 [
   {
-    "id": "_1",
+    "id": 1,
     "img": "https://i.postimg.cc/sxSCSnqv/apple-removebg-preview.png",
     "jobTitle": "Software Engineer",
     "jobType": "remote",
@@ -16,7 +16,7 @@
     "category": "Creative Design"
   },
   {
-    "id": "_2",
+    "id":2,
     "img": "https://i.postimg.cc/NfqcYc2T/BMW-Logo-wine-removebg-preview.png",
     "jobTitle": "Technical Engineer",
     "jobType": "Full Time",
@@ -32,7 +32,7 @@
     "category": "engineer"
   },
   {
-    "id": "_3",
+    "id": 3,
     "img": "https://i.postimg.cc/L4ZprX52/Coca-Cola-removebg-preview.png",
     "jobTitle": "SQA Engineer",
     "jobType": "On Site",
@@ -48,7 +48,7 @@
     "category": "Marketing & Sales"
   },
   {
-    "id": "_4",
+    "id": 4,
     "img": "https://i.postimg.cc/xdCrgjBr/Disney-removebg-preview.png",
     "jobTitle": "Assistant Technical Engineer",
     "jobType": "On Site",
@@ -64,7 +64,7 @@
     "category": "Engineer"
   },
   {
-    "id": "_5",
+    "id": 5,
     "img": "https://i.postimg.cc/c4RNLbfz/facebook-removebg-preview.png",
     "jobTitle": "Marketing & Sales",
     "jobType": "On Site",
@@ -80,7 +80,7 @@
     "category": "Marketing & Sales"
   },
   {
-    "id": "_6",
+    "id": 6,
     "img": "https://i.postimg.cc/pLPMhJZL/google-removebg-preview.png",
     "jobTitle": "Software Engineer",
     "jobType": "Full Time",
@@ -96,7 +96,7 @@
     "category": "Engineer"
   },
   {
-    "id": "_7",
+    "id": 7,
     "img": "https://i.postimg.cc/x1gDKNxy/imdb-removebg-preview.png",
     "jobTitle": "Account & Finance",
     "jobType": "On Site",
@@ -112,7 +112,7 @@
     "category": "Account & Finance"
   },
   {
-    "id": "_8",
+    "id": 8,
     "img": "https://i.postimg.cc/gchCgTt0/Intel-removebg-preview.png",
     "jobTitle": "Assistant Database Design",
     "jobType": "Remote",
@@ -128,7 +128,7 @@
     "category": "Creative Design"
   },
   {
-    "id": "_9",
+    "id": 9,
     "img": "https://i.postimg.cc/k5h0H3d2/microsoft.webp",
     "jobTitle": "Account & Finance",
     "jobType": "Full Time",
@@ -144,7 +144,7 @@
     "category": "Account & Finance"
   },
   {
-    "id": "_10",
+    "id": 10,
     "img": "https://i.postimg.cc/j5pGsH2K/Nike-removebg-preview.png",
     "jobTitle": "Market Manager",
     "jobType": "On Site",
@@ -160,7 +160,7 @@
     "category": "Marketing & Sales"
   },
   {
-    "id": "_11",
+    "id": 11,
     "img": "https://i.postimg.cc/j2yBCDnf/Pepsi-removebg-preview.png",
     "jobTitle": "Quality checker",
     "jobType": "Full Time",
@@ -176,7 +176,7 @@
     "category": "Creative Design"
   },
   {
-    "id": "_12",
+    "id": 12,
     "img": "https://i.postimg.cc/qvJWMMJt/Toyota-removebg-preview.png",
     "jobTitle": "Mechanical Engineer",
     "jobType": "Full Time",

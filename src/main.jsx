@@ -6,6 +6,7 @@ import App from './App';
 import './index.css';
 import Blog from './pages/Blog';
 import Home from './components/Home';
+import SingleJobDetail from './components/SingleJobDetail';
 
 
 const router = createBrowserRouter([
@@ -17,7 +18,13 @@ const router = createBrowserRouter([
                 path:'/',
                 element:<Home></Home>,
                 loader:async()=>fetch('webdata.json') 
-            }
+            },
+            {
+                path:'/:jobid',
+                element:<SingleJobDetail></SingleJobDetail>,
+                loader:async({params})=>fetch(`webdata.json/${params.jobid}`)
+            },
+            
         ]
     },
     {
