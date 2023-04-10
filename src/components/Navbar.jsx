@@ -25,7 +25,7 @@ const Navbar = () => {
                                 <ul className='menu'>
                                     <li><Link to='/' className='link'>Home</Link></li>
                                     <li><Link to='/' className='link'>statistics</Link></li>
-                                    <li><Link to='/' className='link'>applied jobs</Link></li>
+                                    <li><Link to='/applyjob' className='link'>applied jobs</Link></li>
                                     <li><Link to='/' className='link'>blog</Link></li>
                                     <li><Link to='/apply'>< FontAwesomeIcon style={{color:'gray'}} icon={faBox} /></Link></li>
                                 </ul>
