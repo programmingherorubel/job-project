@@ -9,8 +9,9 @@ const ApplyJob = () => {
     const selectedJob = GetSelectJobs()
     const [data,setData]=useState([])
     const [filterValue,setFilterValue]=useState('Filter')
+    
    
-    const saveJobs = []
+    let saveJobs = []
     
     useEffect(()=>{
         fetch('webdata.json')
@@ -24,7 +25,16 @@ const ApplyJob = () => {
         saveJobs.push(purejobObject)
     }
     
- 
+    const info =  saveJobs.filter(job => {
+        if(filterValue === 'Filter'){
+            return job
+        }else{
+            
+            return job?.jobType === filterValue
+        }
+    })
+     
+     
 
     return (
         <>
@@ -35,14 +45,14 @@ const ApplyJob = () => {
             <div  style={{display:'flex',justifyContent:'end'}}>
                 <select onClick={(e)=>setFilterValue(e.target.value)} class="w-25 form-select " aria-label="Default select example">
                     <option selected>Filter</option>
-                    <option value="1">Remote</option>
-                    <option value="2">Full Time</option>
+                    <option >Remote</option>
+                    <option >Full Time</option>
                 </select>
             </div>
             <Row>
                 <Col md={10} className='mx-auto'>
                     {
-                     saveJobs.map((apply,index) => {
+                     info.map((apply,index) => {
                             const {img,jobTitle,name,salary,location}  = apply || {}
 
                         return  <div key={index} style={{background:'white',display:'flex',justifyContent:'space-between',flexWrap:'wrap',alignItems:'center'}} className='mx-auto  p-3 m-3'>
