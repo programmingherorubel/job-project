@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import { addToDb } from '../../public/fakedb';
 import '../Style/SingleJobDetail.css';
 
@@ -10,6 +11,9 @@ const SingleJobDetail = () => {
     const info = useParams()
     const [detaildata,setddetaildata]=useState([])
     const jobdata = info.jobid
+    
+    
+   
 
 
     useEffect(()=>{
@@ -20,10 +24,22 @@ const SingleJobDetail = () => {
 
     // submit to localeStorege
     const applyNowHandeler = (id)=>{
+       
+        toast.success('apply confirmed!', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "colored",
+            });
         addToDb(id)
+       
     }
 
-    const {id,img,jobTitle,jobType,location,salary,phone,email,address,jobDescription,educationalRequirement,experience,category,jobResponsibility} =  detaildata
+    const {id,img,jobTitle,jobType,location,salary,phone,email,address,jobDescription,educationalRequirement,experience,category,jobResponsibility} =  detaildata || {}
     return (
         <>
             <Container fluid className='singleDetail'>

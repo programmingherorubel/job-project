@@ -4,6 +4,7 @@ import { GetSelectJobs } from '../../public/fakedb';
 import '../Style/ApplyJob.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDollar, faLocationPin, faMarker } from '@fortawesome/free-solid-svg-icons';
+import Navbar from '../components/Navbar'
 
 const ApplyJob = () => {
     const selectedJob = GetSelectJobs()
@@ -38,6 +39,7 @@ const ApplyJob = () => {
 
     return (
         <>
+        <Navbar />
         <Container fluid className='applyjob'>
         <h1>Applied Jobs</h1>
         </Container>
